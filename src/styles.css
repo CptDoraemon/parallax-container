@@ -1,0 +1,35 @@
+.parallaxContainer {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  /*clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);*/
+  /*backface-visibility: hidden;*/
+}
+
+.parallaxContainerPlaceholder {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.parallaxBackground {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.parallaxBackground img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.parallaxPayload {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 20;
+}
