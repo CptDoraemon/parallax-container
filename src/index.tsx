@@ -1,13 +1,13 @@
 import styles from './styles.css'
 import * as React from 'react';
-import {MutableRefObject, useEffect, useRef, useState} from 'react';
+import {RefObject, useEffect, useRef, useState} from 'react';
 
 // import './styles.css';
 
-function useParallax(containerRef: MutableRefObject<any>): number {
+function useParallax(containerRef: RefObject<HTMLInputElement>): number {
   const [scrolledPercentage, setScrolledPercentage] = useState(0.5);
   /*
-  * scrolledPercentage[0-1]:
+  * scrolledPercentage ~ [0-1]:
   * 0: top of the page is about to show from the bottom of viewport
   * 0.5: normal position, the whole page is visible.
   * 1: bottom of the page is about to disappear from the top of viewport
@@ -15,6 +15,7 @@ function useParallax(containerRef: MutableRefObject<any>): number {
 
   useEffect(() => {
     function scrollHandler() {
+      if (containerRef.current === null) return;
       const containerTop = containerRef.current.getBoundingClientRect().top;
       const containerHeight = containerRef.current.getBoundingClientRect().height;
       const containerBottom = containerTop + containerHeight;
