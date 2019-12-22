@@ -2,8 +2,6 @@
 
 > A React component wrapper for parallax effect.
 
-[![NPM](https://img.shields.io/npm/v/parallax-container.svg)](https://www.npmjs.com/package/@cptdoraemon/parallax-container) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
 ## Install
 
 ```bash
@@ -19,7 +17,7 @@ import ParallaxContainer from "parallax-container"
 function WrappedComponent() {
     return (
         <div>
-            <h2>Title</h2>
+            <h1>Title</h1>
             <p>Contents</p>
         </div>
     )
@@ -31,7 +29,7 @@ interface AppProps {
 
 function App(props: AppProps) {
     return (
-        <ParallaxContainer backgroundUrl={i.backgroundUrl}>
+        <ParallaxContainer backgroundUrl={props.backgroundUrl}>
             <WrappedComponent />
         </ParallaxContainer>
     )
