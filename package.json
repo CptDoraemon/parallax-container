@@ -1,10 +1,13 @@
 {
-  "name": "parallax-container",
-  "version": "1.0.0",
-  "description": "aaa",
+  "name": "@cptdoraemon/parallax-container",
+  "version": "0.0.1",
+  "description": "A React component wrapper for parallax effect.",
   "author": "CptDoraemon",
   "license": "MIT",
-  "repository": "CptDoraemon/parallax-container",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CptDoraemon/parallax-container.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -51,5 +54,15 @@
   },
   "files": [
     "dist"
+  ],
+  "bugs": {
+    "url": "https://github.com/CptDoraemon/parallax-container/issues"
+  },
+  "homepage": "https://github.com/CptDoraemon/parallax-container#readme",
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [
+    "parallax"
   ]
 }
