@@ -61,7 +61,7 @@ function ParallaxBackground(props: ParallaxBackgroundProps) {
 
 interface ParallaxContainerProps {
   backgroundUrl: string,
-  children: any
+  children: React.ReactElement
 }
 
 function ParallaxContainer(props: ParallaxContainerProps) {
