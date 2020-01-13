@@ -40,11 +40,13 @@ function App(props: AppProps) {
 [Demo](https://cptdoraemon.github.io/parallax-container/)
 
 ## Notes 1
+```html
 <div className='container' style={{position: 'fixed'}}>
     <div className='background' style={{position: 'absolute'}}> </div>
     <div className='texts' style={{position: 'relative'}}> </div>
 </div>
 <div className='placehoder' style={{position: 'relative'}}> </div>
+```
 
 The placeholder gives the percentage of this section is viewed: when the top edge of this section is at the bottom of the viewport, percentage is 0%; when the bottom edge of this section is at the top of the viewport, percentage is 100%;
 
@@ -53,10 +55,12 @@ Then the fixed container is offset by css top property to mimic position: 'relat
 The page can be scrolled much smoother in this way.
 
 ## Notes 2
+```html
 <div className='container' style={{position: 'relative'}}>
     <div className='background' style={{position: 'absolute'}}> </div>
     <div className='texts' style={{position: 'relative'}}> </div>
 </div>
+```
 
 This would work as well, but the images would be jumpy (refreshed slow) when scrolling.
 
